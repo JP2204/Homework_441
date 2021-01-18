@@ -2,12 +2,12 @@ body {
   body {
     padding: 0;
     margin: 0;
-    background-image: url("images/R34.JPG");
+    background-image: url("images/R34.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     font-weight: 300;
 }
 }
