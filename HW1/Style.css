@@ -33,9 +33,17 @@ body {
 }
 
 .container {
-    min-height: 50vh;
-    font-size: 2em;
+  width: 60%;
+  max-width: 700px;
+  margin: 3em auto;
+  padding: 3em;
+
+  background-color: white;
+  border: 10px single rgb(33, 228, 164);
+
+
 }
+
 
 .description {
     margin: 25vh auto;
