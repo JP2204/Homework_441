@@ -20,6 +20,19 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
 
+.container {
+    min-height: 50vh;
+    font-size: 2em;
+}
+
+.description {
+    margin: 25vh auto;
+    padding: 1em;
+    text-align: center;
+    width: 75%;
+    min-width: 300px;
+    background-color: rgba(210, 210, 210, 0.8);
 
 }
