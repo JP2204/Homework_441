@@ -2,7 +2,7 @@ body {
 
     padding: 0;
     margin: 0;
-    background-image: url("../images/R34.jpg");
+    background-image: url("./images/R34.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@ body {
 
 
 .hero {
-  bacground-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/R34.jpg");
+  bacground-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/R34.jpg");
 
   height: 50%;
 
@@ -31,6 +31,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.description-container {
+    min-height: 50vh;
+    font-size: 2em;
 }
 
 .container {
