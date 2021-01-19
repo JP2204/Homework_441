@@ -1,10 +1,66 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url("images/R34.jpg");
+    background-image: url('../images/R34.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-weight: 300;
+    color: white;
+}
+
+h2 {
+  text-decoration: underline;
+  color: rgb(168, 83, 176);
+  font-size: 35pt;
+}
+
+@media (max-width: 865px) {
+    .description-container {
+        font-size: 1.5em;
+    }
+}
+
+.description {
+    margin: 25vh auto;
+    padding: 1em;
+    text-align: center;
+    width: 75%;
+    min-width: 300px;
+    background-color: rgba(210, 210, 210, 0.8);
+
+}
+
+.hero {
+    height: 100vh;
+    min-height: 740px;
+    background-image: url('../images/GTR.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .8);
+}
+
+.hero .title {
+    font-family: Cinzel;
+    font-size: 22pt;
+    color: rgb(78, 42, 94);
+    float: left;
+    margin-top: 170px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 2em;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(120, 120, 120, 0.7);
+}
+
+p {
+  font-size: 20pt;
+  font-family: Ubuntu;
+  color: black;
+  text-align: center;
 }
