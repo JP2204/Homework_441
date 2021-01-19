@@ -51,11 +51,10 @@ h2 {
     margin-left: 1em;
     margin-right: 1em;
     padding: 2em;
-    width: 90%;
     position: relative;
     text-align: center;
     text-decoration: underline;
-    background-color: rgba(120, 120, 120, 0.7);
+    background-color: rgba(34, 31, 31, 0.7);
 }
 
 p {
