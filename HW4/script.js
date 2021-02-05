@@ -101,7 +101,7 @@ function getChoice4()
 
             document.getElementById("mainImage").src = "./img/suki bed.jpg"
 
-            myQuestion.innerHTML = "I am so glad to hear, Suki and Oliver happen to be my cats and I love them dearly, and I was happy to share them with you!!"
+            myQuestion.innerHTML = "I am so glad to hear, Suki and Oliver just so happen to be my cats and I love them dearly, and I was happy to share them with you!!"
 
           }
           else if(choice === "no")
@@ -120,14 +120,7 @@ function getChoice4()
 
         }
 
-
-function restart()
+function reloadThePage()
         {
-            window.location.reload();
-        }
-function restartButton()
-        {
-            userInput = document.getElementById('choice').style.display = 'none';
-            document.getElementById('btnSubmit').innerHTML = 'Restart?';
-            document.getElementById('btnSubmit').onclick = restart;
+          window.location.reload();
         }
