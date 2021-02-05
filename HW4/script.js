@@ -114,7 +114,7 @@ function getChoice4()
 
             document.getElementById("mainImage").src = "./img/tree.jpg"
 
-            myQuestion.innerHTML = "as much as that hurts to hear I respect your opinion and i hope you liked the adorable pictures of Suki and Oliver!"
+            myQuestion.innerHTML = "as much as that hurts to hear I respect your opinion and I hope you liked the adorable pictures of Suki and Oliver!"
           }
 
 
