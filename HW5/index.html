@@ -1,31 +1,33 @@
 <html>
+  <head>
+    <meta lang="en" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MART441-HW5">
+    <meta name="author" content="James Pierce">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
 
-<head>
-    <title>
-        Memory Matching
-    </title>
-    <script src="scripts/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    </link>
-</head>
+    <body onload="displayBlanks();">
+        <h1>Memory Game</h1>
+        <h2 id="score">Score: 0</h2>
+        <table id="cards">
+            <tr id="1st row">
+                <td><img id="card1" src="./images/question.jpg" width="370" height="280" onclick="flipCard(0)"></td>
+                <td><img id="card2" src="./images/question.jpg" width="370" height="280" onclick="flipCard(1)"></td>
+                <td><img id="card3" src="./images/question.jpg" width="370" height="280" onclick="flipCard(2)"></td>
+                <td><img id="card4" src="./images/question.jpg" width="370" height="280" onclick="flipCard(3)"></td>
+                <td><img id="card5" src="./images/question.jpg" width="370" height="280" onclick="flipCard(4)"></td>
+            </tr>
+            <tr id="2nd row">
+                <td><img id="card6" src="./images/question.jpg" width="370" height="280" onclick="flipCard(5)"></td>
+                <td><img id="card7" src="./images/question.jpg" width="370" height="280" onclick="flipCard(6)"></td>
+                <td><img id="card8" src="./images/question.jpg" width="370" height="280" onclick="flipCard(7)"></td>
+                <td><img id="card9" src="./images/question.jpg" width="370" height="280" onclick="flipCard(8)"></td>
+                <td><img id="card10" src="./images/question.jpg" width="370" height="280" onclick="flipCard(9)"></td>
+            </tr>
+        </table>
 
-<body onload="printBlanks();">
-    <h1>Memory Game</h1>
-
-
-    <div class="divTable">
-        <div class="divTableBody">
-            <div class="divTableRow">
-                <div class="divTableCell"><img src="" id="image1" width="250" height="200" onclick="flipImage(0);"></div>
-                <div class="divTableCell"><img src="" id="image2" width="250" height="200" onclick="flipImage(1);"></div>
-            </div>
-            <div class="divTableRow">
-                <div class="divTableCell"><img src="" id="image3" width="250" height="200" onclick="flipImage(2);"></div>
-                <div class="divTableCell"><img src="" id="image4" width="250" height="200" onclick="flipImage(3);"></div>
-            </div>
-        </div>
-    </div>
-
-</body>
-
+    </body>
 </html>
