@@ -11,13 +11,13 @@ function displayBlanks() {
 
 function createRandomArray() {
     var imagePaths = ["img/Huracan.jpg","img/R32.jpg","img/TRX.jpg","img/Type R.jpg","img/R35.jpg"];
-    var imageDeckCount = [0,0,0,0,0];
+    var imageCount = [0,0,0,0,0];
 
     while (imgs.length < 10) {
         var index  = Math.floor(Math.random() * imagePaths.length)
-        if (imageDeckCount[index] < 2) {
+        if (imageCount[index] < 2) {
             imgs.push(imagePaths[index]);
-            imageDeckCount[index] += 1;
+            imageCount[index] += 1;
         }
     }
 }
