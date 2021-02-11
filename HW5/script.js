@@ -1,8 +1,8 @@
-var cardIDs = ["card1","card2","card3","card4","card5","card6","card7","card8","card9","card10"];
-var blankImage = "images/question.jpg";
-var images = new Array();
+var cardID = ["card1","card2","card3","card4","card5","card6","card7","card8","card9","card10"];
+var backImage = "img/Deco.jpg";
+var imgs = new Array();
 var flips = 0;
-var flipIndices = [0,0];
+var flipping = [0,0];
 var score = 0;
 
 function displayBlanks() {
@@ -10,13 +10,13 @@ function displayBlanks() {
 }
 
 function createRandomArray() {
-    var imagePaths = ["images/anemone.jpg","images/dahlia.jpg","images/lavender.jpg","images/rose.jpg","images/tulip.jpg"];
+    var imagePaths = ["img/Huracan.jpg","img/R32.jpg","img/TRX.jpg","img/Type R.jpg","img/R35.jpg"];
     var imageDeckCount = [0,0,0,0,0];
 
-    while (images.length < 10) {
+    while (imgs.length < 10) {
         var index  = Math.floor(Math.random() * imagePaths.length)
         if (imageDeckCount[index] < 2) {
-            images.push(imagePaths[index]);
+            imgs.push(imagePaths[index]);
             imageDeckCount[index] += 1;
         }
     }
@@ -25,22 +25,22 @@ function createRandomArray() {
 function flipCard(index) {
     if (flips == 2) { checkForMatch(); }
     else {
-        document.getElementById(cardIDs[index]).src = images[index];
-        flipIndices[flips] = index;
+        document.getElementById(cardID[index]).src = imgs[index];
+        flipping[flips] = index;
         flips++;
     }
 }
 
 function resetFlippedCards() {
-    document.getElementById(cardIDs[flipIndices[0]]).src = blankImage;
-    document.getElementById(cardIDs[flipIndices[1]]).src = blankImage;
+    document.getElementById(cardID[flipping[0]]).src = backImage;
+    document.getElementById(cardID[flipping[1]]).src = backImage;
 }
 
 function checkForMatch() {
-    if (images[flipIndices[0]] == images[flipIndices[1]]) {
+    if (imgs[flipping[0]] == imgs[flipping[1]]) {
         score += 1;
         document.getElementById('score').innerHTML = "Score: " + score;
-        disableClickOnMatch();
+        disableOnMatch();
         resetCount();
     }
     else {
@@ -49,12 +49,12 @@ function checkForMatch() {
     }
 }
 
-function disableClickOnMatch() {
-    document.getElementById(cardIDs[flipIndices[0]]).onclick = null;
-    document.getElementById(cardIDs[flipIndices[1]]).onclick = null;
+function disableOnMatch() {
+    document.getElementById(cardID[flipping[0]]).onclick = null;
+    document.getElementById(cardID[flipping[1]]).onclick = null;
 }
 
 function resetCount() {
     flips = 0;
-    flipIndices = [0,0];
+    flipping = [0,0];
 }
