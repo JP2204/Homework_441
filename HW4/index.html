@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="en" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MART441-HW4">
+    <meta name="author" content="James Pierce">
+    <title>My Adventure Story</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+
+
+<body>
+  <h1>The Adventures of Suki and Oliver</h1>
+  <img src="./img/oliver and suki sleeping.jpg" id="mainImage" height="280" width="330">
+  <div id="question">
+  <p>This is a story about the very sleepy siblings Oliver and Suki. Oliver is a orange cat and Suki is a black and white cat and they both love to sleep, but would you like to hear about some other things they like to do?</p>
+ </div>
+
+    <br>
+    <input type="text" size="30" id="choice" value="Please enter yes or no">
+    <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+    <input type="text" size="30" id="choice2" value="Please enter cats or blanket" style= "display:none">
+    <button id="btnSubmit2" onclick="getChoice2();" style= "display:none">Click to continue</button>
+
+    <input type="text" size="30" id="choice3" value="Please enter tuna or chicken" style= "display:none">
+    <button id="btnSubmit3" onclick="getChoice3();" style= "display:none">Click to continue</button>
+
+    <input type="text" size="30" id="choice4" value="Please enter yes or no" style= "display:none">
+    <button id="btnSubmit4" onclick="getChoice4();" style= "display:none">Click to continue</button>
+
+    <input type="text" size="30" id="choice5" value="Please enter yes to restart" style= "display:none">
+    <button id="btnSubmit5" onclick="reloadThePage()" style= "display:none">Click to Restart</button>
+
+
+
+</body>
+
+</html>

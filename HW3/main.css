@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(223, 109, 205);
+}
+
+img {
+  display: block;
+  margin: 0px auto;
+  float: left;
+
+}
