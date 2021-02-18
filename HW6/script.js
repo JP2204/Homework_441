@@ -5,6 +5,9 @@ var flips = 0;
 var flipping = [0,0];
 var score = 0;
 
+//JSON
+var player = {"firstname":"", "lastname":"", "age":0, "score":0};
+
 function displayBlanks() {
     createRandomArray();
 }
@@ -57,4 +60,32 @@ function disableOnMatch() {
 function resetCount() {
     flips = 0;
     flipping = [0,0];
+}
+
+function addToPlayer()
+{
+    var firstName = document.getElementById("txtFirstName").value;
+    var lastName = document.getElementById("txtLastName").value;
+    var age = document.getElementById("txtAge").value;
+
+    player.firstname = firstName;
+    player.lastname = lastName;
+    player.age = age;
+    localStorage.setItem("playerInfo", JSON.stringify(player));
+    window.location = "game.html";
+}
+
+function playerInfo()
+{
+    var playerInformation = localStorage.getItem("playerInfo");
+    player = JSON.parse(playerInformation);
+    var str = "Name: " + player.firstname + " " + player.lastname + "<br>" +
+    "Age: " + player.age + "<br>" +
+    "Score: " + player.score;
+    if(document.getElementById("endInformation") != null)
+    {
+        document.getElementById("endInformation").innerHTML = str;
+    }
+
+
 }
