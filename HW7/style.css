@@ -1,0 +1,32 @@
+body
+{
+  background-color: rgb(242, 167, 228);
+  font-size: 200%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0;
+  margin: 1px;
+  border: 0;
+  font-family: cursive;
+}
+
+#btnSubmit
+{
+  width: 10%;
+  height: 10%;
+  padding: 0;
+  border: 0;
+  margin: 1px;
+  font-family: fantasy;
+  font-size: 150%;
+
+}
+
+
+#image
+{
+  width: 45%;
+  height: 65%;
+  
+}
