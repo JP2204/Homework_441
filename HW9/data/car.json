@@ -1,0 +1,15 @@
+{
+    "manufacturer" : "NISSAN",
+    "model" : "R35 GT-R SpecV",
+    "year" : "2013",
+    "horsepower" : "542 HP",
+
+    "colors" : [
+        "Deep Blue Pearl",
+        "Gun Metallic",
+        "Jet Black",
+        "Pearl White",
+        "Solid Red",
+        "Super Silver"
+    ]
+}
