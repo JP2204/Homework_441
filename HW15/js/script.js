@@ -38,7 +38,7 @@ function setup()
 
 function draw()
 {
-  background(1, 255, 240);
+  background(158, 84, 126);
   textSize(titlesize);
   titlesize+=titlesizeDirection;
   count++;
