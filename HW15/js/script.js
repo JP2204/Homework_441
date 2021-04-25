@@ -97,9 +97,10 @@ function draw()
 
 // right arm
   line(130,375, 65, 505);
-
+  line(330,175, 65, 705)
 // left arm
   line(405,260, 35, 305);
+  line(205,360, 55, 505);
 // left leg
   fill(236, 110, 201)
   rect(200, leftlegY, 10, 60);
